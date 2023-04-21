@@ -19,6 +19,8 @@ public class Sondage {
     @Column(name = "description", length = 120)
     private String description;
 
+    @NotBlank
+    @Size(min=3, max=120)
     @Column(name = "question", length = 120)
     private String question;
 
